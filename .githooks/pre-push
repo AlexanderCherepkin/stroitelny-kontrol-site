@@ -1,0 +1,53 @@
+#!/bin/sh
+# pre-push — Full safety gate before push
+# Runs: three-circuit safety check + human approval + full validation
+# Bypass: git push --no-verify (strongly discouraged)
+
+echo ""
+echo "================================================"
+echo "  Agentic Loop — Pre-Push Safety Gate"
+echo "  Three-circuit: safety-control → mutual_check → control"
+echo "================================================"
+echo ""
+
+node "$(dirname "$0")/../../scripts/pre_push_check.js"
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo ""
+  echo "PUSH BLOCKED: pre_push_check failed."
+  exit 1
+fi
+
+echo ""
+echo "=== Validating Python Runtime ==="
+python -m runtime.main --validate
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo ""
+  echo "PUSH BLOCKED: Python runtime validation failed."
+  exit 1
+fi
+
+echo ""
+echo "=== Validating Cross-References ==="
+node "$(dirname "$0")/../../.agent_loop/scripts/validate_cross_references.js"
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo ""
+  echo "PUSH BLOCKED: Cross-reference validation failed."
+  exit 1
+fi
+
+echo ""
+echo "=== Validating Consistency ==="
+node "$(dirname "$0")/../../.agent_loop/scripts/validate_consistency.js"
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo ""
+  echo "PUSH BLOCKED: Consistency validation failed."
+  exit 1
+fi
+
+echo ""
+echo "Pre-push gate passed."
+exit 0

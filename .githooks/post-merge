@@ -1,0 +1,29 @@
+#!/bin/sh
+# post-merge — Automatic conflict marker scan after merge
+# Runs: detect remaining conflict markers in merged files
+# Can be extended to run semantic conflict analysis via runtime agents.
+
+echo ""
+echo "=== Agentic Loop Post-Merge Check ==="
+
+# Prefer Python hook if available; fallback to Node.js safety check on merged files
+PYTHON_HOOK="$(dirname "$0")/../runtime/git_hooks/post_merge.py"
+if command -v python3 >/dev/null 2>&1 && [ -f "$PYTHON_HOOK" ]; then
+  python3 "$PYTHON_HOOK"
+elif command -v python >/dev/null 2>&1 && [ -f "$PYTHON_HOOK" ]; then
+  python "$PYTHON_HOOK"
+else
+  echo "  Python not available. Skipping post-merge scan."
+  echo "  Install Python and runtime dependencies to enable."
+fi
+
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo ""
+  echo "POST-MERGE WARNING: Conflict markers detected in merged files."
+  echo "Resolve them before proceeding."
+  # Note: post-merge hooks cannot block git operations (exit code is ignored by git),
+  # but we still report for CI/logging purposes.
+fi
+
+exit 0

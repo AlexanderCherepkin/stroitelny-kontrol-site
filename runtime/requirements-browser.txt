@@ -1,0 +1,6 @@
+# Optional browser automation dependencies for Agentic Loop.
+# Install only when headless browser tools (tools_browser) are needed:
+#     pip install -r runtime/requirements.txt -r runtime/requirements-browser.txt
+#     playwright install
+
+playwright>=1.40.0

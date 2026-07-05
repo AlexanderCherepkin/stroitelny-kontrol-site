@@ -1,0 +1,9 @@
+# Optional Headroom context-compression dependencies for Agentic Loop.
+# Install only when Headroom CCR (Compress-Cache-Retrieve) tools are needed:
+#     pip install -r runtime/requirements.txt -r runtime/requirements-headroom.txt
+#
+# Headroom is intentionally optional. If the package is missing, the ReAct loop
+# continues without compression using the passthrough results in
+# runtime/engine/headroom_client.py.
+
+headroom-ai>=0.1.0

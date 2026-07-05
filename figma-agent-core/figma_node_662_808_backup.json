@@ -1,0 +1,45 @@
+{
+  "id": "662:808",
+  "name": "BlockchainSection",
+  "type": "FRAME",
+  "layoutMode": "VERTICAL",
+  "primaryAxisSizingMode": "AUTO",
+  "counterAxisSizingMode": "FIXED",
+  "fills": [
+    {
+      "type": "SOLID",
+      "color": {
+        "r": 0.05,
+        "g": 0.05,
+        "b": 0.08,
+        "a": 1
+      },
+      "hex": "#0D0D14",
+      "rgb": "rgb(13, 13, 20)"
+    }
+  ],
+  "children": [
+    {
+      "id": "662:809",
+      "name": "Title",
+      "type": "TEXT",
+      "characters": "Decentralized Future",
+      "style": {
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "fontSize": 48
+      }
+    },
+    {
+      "id": "662:810",
+      "name": "Description",
+      "type": "TEXT",
+      "characters": "Building secure and scalable solutions on the blockchain.",
+      "style": {
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "fontSize": 16
+      }
+    }
+  ]
+}

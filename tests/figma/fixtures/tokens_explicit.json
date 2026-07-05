@@ -1,0 +1,209 @@
+{
+  "id": "0:1",
+  "name": "Token Explicit Fixture",
+  "type": "FRAME",
+  "styles": {
+    "s-background": {
+      "name": "colors/background"
+    },
+    "s-foreground": {
+      "name": "colors/foreground"
+    },
+    "s-primary": {
+      "name": "colors/primary"
+    },
+    "s-secondary": {
+      "name": "colors/secondary"
+    },
+    "s-muted": {
+      "name": "colors/muted"
+    },
+    "s-destructive": {
+      "name": "colors/destructive"
+    },
+    "s-border": {
+      "name": "colors/border"
+    }
+  },
+  "variables": {
+    "v-radius": {
+      "name": "radius/base"
+    }
+  },
+  "children": [
+    {
+      "id": "1:1",
+      "name": "Canvas",
+      "type": "FRAME",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "fill": "s-background"
+      },
+      "children": [
+        {
+          "id": "1:2",
+          "name": "Heading",
+          "type": "TEXT",
+          "characters": "Hello",
+          "style": {
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": 700,
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": {
+                  "r": 0.1,
+                  "g": 0.1,
+                  "b": 0.12,
+                  "a": 1
+                }
+              }
+            ]
+          },
+          "styles": {
+            "text": "s-foreground"
+          }
+        },
+        {
+          "id": "1:3",
+          "name": "Primary Button",
+          "type": "FRAME",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.23,
+                "g": 0.51,
+                "b": 0.96,
+                "a": 1
+              }
+            }
+          ],
+          "styles": {
+            "fill": "s-primary"
+          },
+          "children": [
+            {
+              "id": "1:4",
+              "name": "Primary Text",
+              "type": "TEXT",
+              "characters": "Save",
+              "style": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:5",
+          "name": "Secondary Button",
+          "type": "FRAME",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.2,
+                "g": 0.3,
+                "b": 0.4,
+                "a": 1
+              }
+            }
+          ],
+          "styles": {
+            "fill": "s-secondary"
+          },
+          "children": []
+        },
+        {
+          "id": "1:6",
+          "name": "Description",
+          "type": "TEXT",
+          "characters": "Details",
+          "style": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": {
+                  "r": 0.4,
+                  "g": 0.4,
+                  "b": 0.43,
+                  "a": 1
+                }
+              }
+            ]
+          },
+          "styles": {
+            "text": "s-muted"
+          }
+        },
+        {
+          "id": "1:7",
+          "name": "Error Message",
+          "type": "FRAME",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.94,
+                "g": 0.26,
+                "b": 0.26,
+                "a": 1
+              }
+            }
+          ],
+          "styles": {
+            "fill": "s-destructive"
+          },
+          "children": []
+        },
+        {
+          "id": "1:8",
+          "name": "Divider",
+          "type": "FRAME",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.9,
+                "g": 0.92,
+                "b": 0.95,
+                "a": 1
+              }
+            }
+          ],
+          "styles": {
+            "fill": "s-border"
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "providers": {
+    "anthropic": {
+      "default_model": "claude-sonnet-4-6",
+      "models": {
+        "claude-sonnet-4-6": {
+          "context_window": 200000,
+          "max_output_tokens": 8192,
+          "pricing_input_per_1k": 0.003,
+          "pricing_output_per_1k": 0.015,
+          "supports_vision": true,
+          "supports_tools": true
+        },
+        "claude-opus-4-7": {
+          "context_window": 200000,
+          "max_output_tokens": 8192,
+          "pricing_input_per_1k": 0.015,
+          "pricing_output_per_1k": 0.075,
+          "supports_vision": true,
+          "supports_tools": true
+        },
+        "claude-haiku-4-5": {
+          "context_window": 200000,
+          "max_output_tokens": 4096,
+          "pricing_input_per_1k": 0.00025,
+          "pricing_output_per_1k": 0.00125,
+          "supports_vision": false,
+          "supports_tools": true
+        }
+      }
+    },
+    "openai": {
+      "default_model": "gpt-4o",
+      "models": {
+        "gpt-4o": {
+          "context_window": 128000,
+          "max_output_tokens": 16384,
+          "pricing_input_per_1k": 0.005,
+          "pricing_output_per_1k": 0.015,
+          "supports_vision": true,
+          "supports_tools": true
+        },
+        "gpt-4o-mini": {
+          "context_window": 128000,
+          "max_output_tokens": 16384,
+          "pricing_input_per_1k": 0.00015,
+          "pricing_output_per_1k": 0.0006,
+          "supports_vision": true,
+          "supports_tools": true
+        }
+      }
+    },
+    "mock": {
+      "default_model": "mock-engine",
+      "models": {
+        "mock-engine": {
+          "context_window": 64000,
+          "max_output_tokens": 4096,
+          "pricing_input_per_1k": 0,
+          "pricing_output_per_1k": 0,
+          "supports_vision": false,
+          "supports_tools": true
+        }
+      }
+    },
+    "deepseek": {
+      "default_model": "deepseek-chat",
+      "models": {
+        "deepseek-chat": {
+          "context_window": 64000,
+          "max_output_tokens": 8192,
+          "pricing_input_per_1k": 0.00014,
+          "pricing_output_per_1k": 0.00028,
+          "supports_vision": false,
+          "supports_tools": true
+        },
+        "deepseek-reasoner": {
+          "context_window": 64000,
+          "max_output_tokens": 8192,
+          "pricing_input_per_1k": 0.0007,
+          "pricing_output_per_1k": 0.0024,
+          "supports_vision": false,
+          "supports_tools": true
+        }
+      }
+    }
+  },
+  "fallback_chain": ["anthropic", "openai", "deepseek"],
+  "default_provider": "anthropic",
+  "default_max_iterations": 5,
+  "default_timeout_ms": 60000
+}

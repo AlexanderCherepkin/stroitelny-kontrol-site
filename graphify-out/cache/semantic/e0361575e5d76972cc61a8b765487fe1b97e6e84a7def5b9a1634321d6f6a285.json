@@ -1,0 +1,1 @@
+{"nodes": [{"id": "observability_lifecycle_gracefulshutdown", "label": "GracefulShutdown \u2014 SIGTERM/SIGINT handler, drains in-flight work, runs registered cleanups", "file_type": "code", "source_file": "runtime/observability/lifecycle.py", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

@@ -1,0 +1,28 @@
+#!/bin/sh
+# pre-commit — Fast safety checks before each commit
+# Runs: secret detection, blocked files, file size validation, cross-references
+
+echo ""
+echo "=== Agentic Loop Pre-Commit Safety Check ==="
+
+node "$(dirname "$0")/../../scripts/safety_check.js" --staged
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo ""
+  echo "COMMIT BLOCKED: Safety check failed."
+  exit 1
+fi
+
+echo ""
+echo "=== Validating Cross-References ==="
+node "$(dirname "$0")/../../.agent_loop/scripts/validate_cross_references.js"
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo ""
+  echo "COMMIT BLOCKED: Cross-reference validation failed."
+  exit 1
+fi
+
+echo ""
+echo "Pre-commit check passed."
+exit 0

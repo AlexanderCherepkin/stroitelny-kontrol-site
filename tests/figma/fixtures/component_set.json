@@ -1,0 +1,130 @@
+{
+  "id": "0:1",
+  "name": "Page",
+  "type": "DOCUMENT",
+  "children": [
+    {
+      "id": "10:1",
+      "name": "Button",
+      "type": "COMPONENT_SET",
+      "variantGroupProperties": {
+        "Variant": {
+          "type": "STRING",
+          "values": ["Primary", "Secondary"],
+          "defaultValue": "Primary"
+        },
+        "Size": {
+          "type": "STRING",
+          "values": ["Small", "Large"],
+          "defaultValue": "Small"
+        }
+      },
+      "children": [
+        {
+          "id": "11:1",
+          "name": "Primary / Small",
+          "type": "COMPONENT",
+          "componentSetId": "10:1",
+          "variantProperties": {
+            "Variant": "Primary",
+            "Size": "Small"
+          },
+          "children": [
+            {
+              "id": "11:2",
+              "name": "Label",
+              "type": "TEXT",
+              "characters": "Button",
+              "style": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 500
+              },
+              "box": {"x": 0, "y": 0, "width": 80, "height": 20}
+            }
+          ],
+          "box": {"x": 0, "y": 0, "width": 120, "height": 40}
+        },
+        {
+          "id": "12:1",
+          "name": "Secondary / Small",
+          "type": "COMPONENT",
+          "componentSetId": "10:1",
+          "variantProperties": {
+            "Variant": "Secondary",
+            "Size": "Small"
+          },
+          "children": [
+            {
+              "id": "12:2",
+              "name": "Label",
+              "type": "TEXT",
+              "characters": "Button",
+              "style": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 500
+              },
+              "box": {"x": 0, "y": 0, "width": 80, "height": 20}
+            }
+          ],
+          "box": {"x": 130, "y": 0, "width": 120, "height": 40}
+        }
+      ],
+      "box": {"x": 0, "y": 0, "width": 260, "height": 40}
+    },
+    {
+      "id": "20:1",
+      "name": "Icon Button",
+      "type": "COMPONENT",
+      "children": [
+        {
+          "id": "20:2",
+          "name": "Icon",
+          "type": "VECTOR",
+          "box": {"x": 0, "y": 0, "width": 24, "height": 24}
+        }
+      ],
+      "box": {"x": 0, "y": 50, "width": 40, "height": 40}
+    },
+    {
+      "id": "30:1",
+      "name": "Card",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "paddingTop": 16,
+      "paddingRight": 16,
+      "paddingBottom": 16,
+      "paddingLeft": 16,
+      "itemSpacing": 12,
+      "children": [
+        {
+          "id": "30:2",
+          "name": "Card Button",
+          "type": "INSTANCE",
+          "componentSetId": "10:1",
+          "componentId": "11:1",
+          "variantProperties": {
+            "Variant": "Primary",
+            "Size": "Large"
+          },
+          "overrides": [
+            {
+              "id": "11:2",
+              "overriddenFields": ["characters"]
+            }
+          ],
+          "box": {"x": 0, "y": 0, "width": 120, "height": 40}
+        },
+        {
+          "id": "30:3",
+          "name": "Card Icon",
+          "type": "INSTANCE",
+          "componentId": "20:1",
+          "box": {"x": 0, "y": 52, "width": 40, "height": 40}
+        }
+      ],
+      "box": {"x": 0, "y": 100, "width": 200, "height": 120}
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "mcp_filesystem_package", "label": "mcp-filesystem \u2014 Node.js MCP server for filesystem operations", "file_type": "code", "source_file": "mcp_servers/mcp-filesystem/package.json", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

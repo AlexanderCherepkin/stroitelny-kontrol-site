@@ -1,0 +1,2 @@
+{"event_id": "61a6592e7a2b409fa26913f5fb53ac1e", "type": "pipeline_start", "timestamp": 1781114179.5219822, "agent": "", "session": "test-session", "payload": {"user_input": "hello world"}, "result": ""}
+{"event_id": "34fd5967e3cd4fcc952d89a31edf0270", "type": "agent_completed", "timestamp": 1781114179.5219822, "agent": "main_loop.md", "session": "test-session", "payload": {"outputs": {"result": "ok"}, "latency_ms": 150.5}, "result": ""}

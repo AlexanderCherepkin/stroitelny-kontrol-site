@@ -1,0 +1,10 @@
+# Optional Memanto semantic-memory dependencies for Agentic Loop.
+# Install only when Memanto long-term memory tools are needed:
+#     pip install -r runtime/requirements.txt -r runtime/requirements-memanto.txt
+#
+# Memanto is intentionally optional. If the server is not running and the
+# packages are missing, the ReAct loop continues using the in-memory fallback
+# in runtime/engine/memanto_client.py.
+
+memanto>=0.1.0
+moorcheh-sdk>=1.3.7

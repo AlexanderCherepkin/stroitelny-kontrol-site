@@ -1,0 +1,1288 @@
+{
+  "id": "1:1",
+  "name": "Complex Layout Page",
+  "type": "FRAME",
+  "visible": true,
+  "layoutMode": "VERTICAL",
+  "primaryAxisAlignItems": "MIN",
+  "counterAxisAlignItems": "MIN",
+  "itemSpacing": 0,
+  "paddingTop": 0,
+  "paddingRight": 0,
+  "paddingBottom": 0,
+  "paddingLeft": 0,
+  "primaryAxisSizingMode": "AUTO",
+  "counterAxisSizingMode": "FIXED",
+  "absoluteBoundingBox": {
+    "x": 0,
+    "y": 0,
+    "width": 1440,
+    "height": 1600
+  },
+  "fills": [
+    {
+      "type": "SOLID",
+      "color": {
+        "r": 0.98,
+        "g": 0.98,
+        "b": 0.99,
+        "a": 1
+      }
+    }
+  ],
+  "children": [
+    {
+      "id": "100:1",
+      "name": "Hero With Badge",
+      "type": "FRAME",
+      "visible": true,
+      "layoutMode": "VERTICAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "CENTER",
+      "itemSpacing": 24,
+      "paddingTop": 80,
+      "paddingRight": 160,
+      "paddingBottom": 80,
+      "paddingLeft": 160,
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "absoluteBoundingBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 500
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": "100:2",
+          "name": "Headline",
+          "type": "TEXT",
+          "visible": true,
+          "characters": "Hero with overlay badge",
+          "absoluteBoundingBox": {
+            "x": 160,
+            "y": 80,
+            "width": 1120,
+            "height": 72
+          },
+          "style": {
+            "fontFamily": "Inter",
+            "fontSize": 56,
+            "fontWeight": 700,
+            "textAlignHorizontal": "CENTER",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": {
+                  "r": 0.1,
+                  "g": 0.1,
+                  "b": 0.12,
+                  "a": 1
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "100:3",
+          "name": "Card Stack",
+          "type": "FRAME",
+          "visible": true,
+          "layoutMode": "HORIZONTAL",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "STRETCH",
+          "itemSpacing": 24,
+          "paddingTop": 0,
+          "paddingRight": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "absoluteBoundingBox": {
+            "x": 160,
+            "y": 176,
+            "width": 1120,
+            "height": 244
+          },
+          "children": [
+            {
+              "id": "100:4",
+              "name": "Card",
+              "type": "FRAME",
+              "visible": true,
+              "layoutMode": "VERTICAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "itemSpacing": 12,
+              "paddingTop": 24,
+              "paddingRight": 24,
+              "paddingBottom": 24,
+              "paddingLeft": 24,
+              "absoluteBoundingBox": {
+                "x": 160,
+                "y": 176,
+                "width": 360,
+                "height": 244
+              },
+              "cornerRadius": 16,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                }
+              ],
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "visible": true,
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.1
+                  },
+                  "offset": {
+                    "x": 0,
+                    "y": 8
+                  },
+                  "radius": 32,
+                  "spread": -8
+                }
+              ],
+              "children": [
+                {
+                  "id": "100:5",
+                  "name": "Badge",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "HORIZONTAL",
+                  "layoutPositioning": "ABSOLUTE",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 0,
+                  "paddingTop": 6,
+                  "paddingRight": 12,
+                  "paddingBottom": 6,
+                  "paddingLeft": 12,
+                  "absoluteBoundingBox": {
+                    "x": 472,
+                    "y": 160,
+                    "width": 64,
+                    "height": 28
+                  },
+                  "cornerRadius": 9999,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.94,
+                        "g": 0.26,
+                        "b": 0.26,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "100:6",
+                      "name": "Badge Text",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "New",
+                      "absoluteBoundingBox": {
+                        "x": 484,
+                        "y": 166,
+                        "width": 40,
+                        "height": 16
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 12,
+                        "fontWeight": 600,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "100:7",
+                  "name": "Card Title",
+                  "type": "TEXT",
+                  "visible": true,
+                  "characters": "Card with absolute badge",
+                  "absoluteBoundingBox": {
+                    "x": 184,
+                    "y": 236,
+                    "width": 312,
+                    "height": 28
+                  },
+                  "style": {
+                    "fontFamily": "Inter",
+                    "fontSize": 22,
+                    "fontWeight": 600,
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.1,
+                          "g": 0.1,
+                          "b": 0.12,
+                          "a": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "100:8",
+                  "name": "Card Body",
+                  "type": "TEXT",
+                  "visible": true,
+                  "characters": "This card has a badge positioned absolutely in the top-right corner.",
+                  "absoluteBoundingBox": {
+                    "x": 184,
+                    "y": 276,
+                    "width": 312,
+                    "height": 96
+                  },
+                  "style": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeightPx": 24,
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.4,
+                          "g": 0.4,
+                          "b": 0.43,
+                          "a": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "100:9",
+              "name": "Mask Card",
+              "type": "FRAME",
+              "visible": true,
+              "layoutMode": "VERTICAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "itemSpacing": 0,
+              "paddingTop": 0,
+              "paddingRight": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "absoluteBoundingBox": {
+                "x": 544,
+                "y": 176,
+                "width": 360,
+                "height": 244
+              },
+              "cornerRadius": 16,
+              "clipContent": true,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "id": "100:10",
+                  "name": "Masked Image",
+                  "type": "RECTANGLE",
+                  "visible": true,
+                  "absoluteBoundingBox": {
+                    "x": 544,
+                    "y": 176,
+                    "width": 360,
+                    "height": 160
+                  },
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "imageRef": "test-image-ref-1",
+                      "scaleMode": "FILL"
+                    }
+                  ]
+                },
+                {
+                  "id": "100:11",
+                  "name": "Mask Label",
+                  "type": "TEXT",
+                  "visible": true,
+                  "characters": "Clipped image card",
+                  "absoluteBoundingBox": {
+                    "x": 568,
+                    "y": 352,
+                    "width": 312,
+                    "height": 52
+                  },
+                  "style": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 500,
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.1,
+                          "g": 0.1,
+                          "b": 0.12,
+                          "a": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "100:12",
+              "name": "Auto Card",
+              "type": "FRAME",
+              "visible": true,
+              "layoutMode": "VERTICAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "itemSpacing": 12,
+              "paddingTop": 24,
+              "paddingRight": 24,
+              "paddingBottom": 24,
+              "paddingLeft": 24,
+              "primaryAxisSizingMode": "AUTO",
+              "counterAxisSizingMode": "AUTO",
+              "absoluteBoundingBox": {
+                "x": 928,
+                "y": 176,
+                "width": 352,
+                "height": 244
+              },
+              "cornerRadius": 16,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "id": "100:13",
+                  "name": "Auto Title",
+                  "type": "TEXT",
+                  "visible": true,
+                  "characters": "Auto-sized card",
+                  "absoluteBoundingBox": {
+                    "x": 952,
+                    "y": 200,
+                    "width": 304,
+                    "height": 28
+                  },
+                  "style": {
+                    "fontFamily": "Inter",
+                    "fontSize": 22,
+                    "fontWeight": 600,
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.1,
+                          "g": 0.1,
+                          "b": 0.12,
+                          "a": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "100:14",
+                  "name": "Auto Body",
+                  "type": "TEXT",
+                  "visible": true,
+                  "characters": "This card uses AUTO sizing on both axes. It should not receive fixed w/h classes.",
+                  "absoluteBoundingBox": {
+                    "x": 952,
+                    "y": 240,
+                    "width": 304,
+                    "height": 96
+                  },
+                  "style": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeightPx": 24,
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.4,
+                          "g": 0.4,
+                          "b": 0.43,
+                          "a": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200:1",
+      "name": "Complex Grid",
+      "type": "FRAME",
+      "visible": true,
+      "layoutMode": "VERTICAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "itemSpacing": 0,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0,
+      "primaryAxisSizingMode": "FIXED",
+      "counterAxisSizingMode": "FIXED",
+      "absoluteBoundingBox": {
+        "x": 0,
+        "y": 500,
+        "width": 1440,
+        "height": 600
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.96,
+            "g": 0.97,
+            "b": 0.98,
+            "a": 1
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": "200:2",
+          "name": "Row 1",
+          "type": "FRAME",
+          "visible": true,
+          "layoutMode": "HORIZONTAL",
+          "primaryAxisAlignItems": "SPACE_BETWEEN",
+          "counterAxisAlignItems": "CENTER",
+          "itemSpacing": 16,
+          "paddingTop": 24,
+          "paddingRight": 160,
+          "paddingBottom": 24,
+          "paddingLeft": 160,
+          "absoluteBoundingBox": {
+            "x": 0,
+            "y": 500,
+            "width": 1440,
+            "height": 80
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              }
+            }
+          ],
+          "children": [
+            {
+              "id": "200:3",
+              "name": "Label",
+              "type": "TEXT",
+              "visible": true,
+              "characters": "Space-between row",
+              "absoluteBoundingBox": {
+                "x": 160,
+                "y": 528,
+                "width": 180,
+                "height": 24
+              },
+              "style": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 600,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.1,
+                      "g": 0.1,
+                      "b": 0.12,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "200:4",
+              "name": "Actions",
+              "type": "FRAME",
+              "visible": true,
+              "layoutMode": "HORIZONTAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "CENTER",
+              "itemSpacing": 12,
+              "paddingTop": 0,
+              "paddingRight": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "absoluteBoundingBox": {
+                "x": 1152,
+                "y": 520,
+                "width": 128,
+                "height": 40
+              },
+              "children": [
+                {
+                  "id": "200:5",
+                  "name": "Action 1",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 0,
+                  "paddingTop": 8,
+                  "paddingRight": 16,
+                  "paddingBottom": 8,
+                  "paddingLeft": 16,
+                  "absoluteBoundingBox": {
+                    "x": 1152,
+                    "y": 520,
+                    "width": 56,
+                    "height": 40
+                  },
+                  "cornerRadius": 6,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.9,
+                        "g": 0.92,
+                        "b": 0.95,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "200:6",
+                      "name": "Action 1 Text",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "Edit",
+                      "absoluteBoundingBox": {
+                        "x": 1160,
+                        "y": 530,
+                        "width": 40,
+                        "height": 20
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 500,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.2,
+                              "g": 0.3,
+                              "b": 0.4,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "200:7",
+                  "name": "Action 2",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 0,
+                  "paddingTop": 8,
+                  "paddingRight": 16,
+                  "paddingBottom": 8,
+                  "paddingLeft": 16,
+                  "absoluteBoundingBox": {
+                    "x": 1220,
+                    "y": 520,
+                    "width": 60,
+                    "height": 40
+                  },
+                  "cornerRadius": 6,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.2,
+                        "g": 0.3,
+                        "b": 0.4,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "200:8",
+                      "name": "Action 2 Text",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "Save",
+                      "absoluteBoundingBox": {
+                        "x": 1228,
+                        "y": 530,
+
+                        "width": 44,
+                        "height": 20
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 500,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200:9",
+          "name": "Nested Auto Layout",
+          "type": "FRAME",
+          "visible": true,
+          "layoutMode": "VERTICAL",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "MIN",
+          "itemSpacing": 16,
+          "paddingTop": 32,
+          "paddingRight": 160,
+          "paddingBottom": 32,
+          "paddingLeft": 160,
+          "absoluteBoundingBox": {
+            "x": 0,
+            "y": 580,
+            "width": 1440,
+            "height": 520
+          },
+          "children": [
+            {
+              "id": "200:10",
+              "name": "Row A",
+              "type": "FRAME",
+              "visible": true,
+              "layoutMode": "HORIZONTAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "CENTER",
+              "itemSpacing": 16,
+              "paddingTop": 0,
+              "paddingRight": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "absoluteBoundingBox": {
+                "x": 160,
+                "y": 612,
+                "width": 1120,
+                "height": 56
+              },
+              "children": [
+                {
+                  "id": "200:11",
+                  "name": "Icon Box",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 0,
+                  "paddingTop": 0,
+                  "paddingRight": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "absoluteBoundingBox": {
+                    "x": 160,
+                    "y": 612,
+                    "width": 56,
+                    "height": 56
+                  },
+                  "cornerRadius": 12,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.23,
+                        "g": 0.51,
+                        "b": 0.96,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "200:12",
+                  "name": "Text Stack",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "itemSpacing": 4,
+                  "paddingTop": 0,
+                  "paddingRight": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "absoluteBoundingBox": {
+                    "x": 232,
+                    "y": 616,
+                    "width": 400,
+                    "height": 48
+                  },
+                  "children": [
+                    {
+                      "id": "200:13",
+                      "name": "Row Title",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "Nested vertical stack",
+                      "absoluteBoundingBox": {
+                        "x": 232,
+                        "y": 616,
+                        "width": 400,
+                        "height": 24
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 600,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.1,
+                              "g": 0.1,
+                              "b": 0.12,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "200:14",
+                      "name": "Row Subtitle",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "Two text nodes stacked inside a horizontal row.",
+                      "absoluteBoundingBox": {
+                        "x": 232,
+                        "y": 644,
+                        "width": 400,
+                        "height": 20
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.4,
+                              "g": 0.4,
+                              "b": 0.43,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "200:15",
+              "name": "Row B",
+              "type": "FRAME",
+              "visible": true,
+              "layoutMode": "HORIZONTAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "CENTER",
+              "itemSpacing": 16,
+              "paddingTop": 0,
+              "paddingRight": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "absoluteBoundingBox": {
+                "x": 160,
+                "y": 684,
+                "width": 1120,
+                "height": 56
+              },
+              "children": [
+                {
+                  "id": "200:16",
+                  "name": "Icon Box",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 0,
+                  "paddingTop": 0,
+                  "paddingRight": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "absoluteBoundingBox": {
+                    "x": 160,
+                    "y": 684,
+                    "width": 56,
+                    "height": 56
+                  },
+                  "cornerRadius": 12,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.22,
+                        "g": 0.65,
+                        "b": 0.53,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "200:17",
+                  "name": "Text Stack",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "itemSpacing": 4,
+                  "paddingTop": 0,
+                  "paddingRight": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "absoluteBoundingBox": {
+                    "x": 232,
+                    "y": 688,
+                    "width": 400,
+                    "height": 48
+                  },
+                  "children": [
+                    {
+                      "id": "200:18",
+                      "name": "Row Title",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "Another nested row",
+                      "absoluteBoundingBox": {
+                        "x": 232,
+                        "y": 689,
+                        "width": 400,
+                        "height": 24
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 600,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.1,
+                              "g": 0.1,
+                              "b": 0.12,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "200:19",
+                      "name": "Row Subtitle",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "Icon box plus text stack, repeated with different colors.",
+                      "absoluteBoundingBox": {
+                        "x": 232,
+                        "y": 717,
+                        "width": 400,
+                        "height": 20
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.4,
+                              "g": 0.4,
+                              "b": 0.43,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300:1",
+      "name": "Modal Overlay",
+      "type": "FRAME",
+      "visible": true,
+      "layoutMode": "VERTICAL",
+      "primaryAxisAlignItems": "CENTER",
+      "counterAxisAlignItems": "CENTER",
+      "itemSpacing": 0,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0,
+      "absoluteBoundingBox": {
+        "x": 0,
+        "y": 1100,
+        "width": 1440,
+        "height": 500
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.1,
+            "g": 0.1,
+            "b": 0.12,
+            "a": 0.6
+          },
+          "opacity": 0.6
+        }
+      ],
+      "children": [
+        {
+          "id": "300:2",
+          "name": "Modal",
+          "type": "FRAME",
+          "visible": true,
+          "layoutMode": "VERTICAL",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "CENTER",
+          "itemSpacing": 16,
+          "paddingTop": 32,
+          "paddingRight": 32,
+          "paddingBottom": 32,
+          "paddingLeft": 32,
+          "absoluteBoundingBox": {
+            "x": 520,
+            "y": 1180,
+            "width": 400,
+            "height": 340
+          },
+          "cornerRadius": 20,
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              }
+            }
+          ],
+          "children": [
+            {
+              "id": "300:3",
+              "name": "Modal Title",
+              "type": "TEXT",
+              "visible": true,
+              "characters": "Confirm action",
+              "absoluteBoundingBox": {
+                "x": 552,
+                "y": 1212,
+                "width": 336,
+                "height": 32
+              },
+              "style": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 700,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.1,
+                      "g": 0.1,
+                      "b": 0.12,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "300:4",
+              "name": "Modal Body",
+              "type": "TEXT",
+              "visible": true,
+              "characters": "This modal simulates an overlay with semi-transparent backdrop.",
+              "absoluteBoundingBox": {
+                "x": 552,
+                "y": 1260,
+                "width": 336,
+                "height": 72
+              },
+              "style": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeightPx": 24,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.4,
+                      "g": 0.4,
+                      "b": 0.43,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "300:5",
+              "name": "Modal Actions",
+              "type": "FRAME",
+              "visible": true,
+              "layoutMode": "HORIZONTAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "CENTER",
+              "itemSpacing": 12,
+              "paddingTop": 0,
+              "paddingRight": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "absoluteBoundingBox": {
+                "x": 552,
+                "y": 1452,
+                "width": 336,
+                "height": 40
+              },
+              "children": [
+                {
+                  "id": "300:6",
+                  "name": "Cancel Button",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 0,
+                  "paddingTop": 10,
+                  "paddingRight": 20,
+                  "paddingBottom": 10,
+                  "paddingLeft": 20,
+                  "absoluteBoundingBox": {
+                    "x": 552,
+                    "y": 1452,
+                    "width": 100,
+                    "height": 40
+                  },
+                  "cornerRadius": 8,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.95,
+                        "g": 0.96,
+                        "b": 0.97,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "300:7",
+                      "name": "Cancel Text",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "Cancel",
+                      "absoluteBoundingBox": {
+                        "x": 566,
+                        "y": 1462,
+                        "width": 72,
+                        "height": 20
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 500,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.2,
+                              "g": 0.3,
+                              "b": 0.4,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "300:8",
+                  "name": "Confirm Button",
+                  "type": "FRAME",
+                  "visible": true,
+                  "layoutMode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 0,
+                  "paddingTop": 10,
+                  "paddingRight": 20,
+                  "paddingBottom": 10,
+                  "paddingLeft": 20,
+                  "absoluteBoundingBox": {
+                    "x": 704,
+                    "y": 1452,
+                    "width": 100,
+                    "height": 40
+                  },
+                  "cornerRadius": 8,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.23,
+                        "g": 0.51,
+                        "b": 0.96,
+                        "a": 1
+                      }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "300:9",
+                      "name": "Confirm Text",
+                      "type": "TEXT",
+                      "visible": true,
+                      "characters": "Confirm",
+                      "absoluteBoundingBox": {
+                        "x": 720,
+                        "y": 1462,
+                        "width": 68,
+                        "height": 20
+                      },
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 500,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

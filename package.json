@@ -1,0 +1,35 @@
+{
+  "name": "agentic-loop",
+  "version": "1.0.0",
+  "description": "Multi-agent AI system with hierarchical safety-first architecture — 156 agents across 6 layers",
+  "main": "cli.js",
+  "bin": {
+    "agentic-loop": "cli.js"
+  },
+  "scripts": {
+    "test": "node memory/test_all.js",
+    "cli": "node cli.js",
+    "validate": "node cli.js validate",
+    "safety-check": "node scripts/safety_check.js --all",
+    "pre-push": "node scripts/pre_push_check.js",
+    "install-hooks": "node scripts/install_git_hooks.js",
+    "memory-test": "node memory/test_all.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "private": true,
+  "packageManager": "pnpm@10.33.2",
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "ink": "^3.2.0",
+    "ora": "^5.4.1",
+    "react": "^18.3.1"
+  }
+}

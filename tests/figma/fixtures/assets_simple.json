@@ -1,0 +1,84 @@
+{
+  "id": "1:1",
+  "name": "Asset Test Page",
+  "type": "FRAME",
+  "visible": true,
+  "absoluteBoundingBox": {
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 600
+  },
+  "layoutMode": "VERTICAL",
+  "primaryAxisAlignItems": "MIN",
+  "counterAxisAlignItems": "MIN",
+  "itemSpacing": 16,
+  "paddingTop": 24,
+  "paddingRight": 24,
+  "paddingBottom": 24,
+  "paddingLeft": 24,
+  "children": [
+    {
+      "id": "2:1",
+      "name": "Hero Photo",
+      "type": "IMAGE",
+      "visible": true,
+      "absoluteBoundingBox": {
+        "x": 24,
+        "y": 24,
+        "width": 752,
+        "height": 300
+      }
+    },
+    {
+      "id": "2:2",
+      "name": "Logo Icon",
+      "type": "VECTOR",
+      "visible": true,
+      "absoluteBoundingBox": {
+        "x": 24,
+        "y": 340,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "2:3",
+      "name": "Card With Background",
+      "type": "RECTANGLE",
+      "visible": true,
+      "absoluteBoundingBox": {
+        "x": 24,
+        "y": 404,
+        "width": 200,
+        "height": 120
+      },
+      "fills": [
+        {
+          "type": "IMAGE",
+          "imageRef": "test-image-ref-bg",
+          "scaleMode": "FILL"
+        }
+      ]
+    },
+    {
+      "id": "2:4",
+      "name": "Headline",
+      "type": "TEXT",
+      "visible": true,
+      "characters": "Asset Pipeline Test",
+      "absoluteBoundingBox": {
+        "x": 24,
+        "y": 540,
+        "width": 300,
+        "height": 36
+      },
+      "style": {
+        "fontFamily": "Inter",
+        "fontSize": 32,
+        "fontWeight": 700,
+        "lineHeightPx": 40
+      }
+    }
+  ]
+}

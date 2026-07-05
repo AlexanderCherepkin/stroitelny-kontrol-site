@@ -1,0 +1,1 @@
+{"nodes": [{"id": "memory_vector_store_vectorstore", "label": "VectorStore \u2014 SQLite-backed dense vector storage with brute-force cosine search", "file_type": "code", "source_file": "runtime/memory/vector_store.py", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

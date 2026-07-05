@@ -1,0 +1,29 @@
+# Environment secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Generated outputs
+agent_outputs/
+components/
+public/images/
+analysis_report.txt
+figma_node.json
+conductor_report.json
+spec.md
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

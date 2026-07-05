@@ -1,0 +1,28 @@
+# .safetyignore — Files to skip during safety checks
+# These files contain detection patterns or reference dangerous commands
+# as part of the safety infrastructure, not as actual commands.
+
+# Safety infrastructure (contains detection patterns, not real commands)
+cli.js
+scripts/safety_check.js
+scripts/pre_push_check.js
+scripts/install_git_hooks.js
+
+# MCP servers that handle dangerous commands (part of safety system)
+mcp_servers/runcom_server.py
+mcp_servers/database_server.py
+mcp_servers/replace_server.py
+
+# Runtime safety chain (references dangerous commands as policy)
+runtime/safety/safety_chain.py
+
+# Git hooks contain --no-verify in documentation
+.githooks/pre-commit
+.githooks/pre-push
+
+# Documentation examples
+.agent_loop/tools_terminal/terminal_io/io_handler.md
+
+# Figma compliance checker (contains detection patterns for generated code)
+figma-agent-core/compliance_checker.py
+tests/figma/test_compliance_checker.py

@@ -1,0 +1,57 @@
+openapi: 3.0.3
+info:
+  title: Lead API
+  version: 1.0.0
+paths:
+  /api/leads:
+    post:
+      operationId: createLead
+      summary: Create a new lead
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Lead'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Lead'
+    get:
+      operationId: listLeads
+      summary: List leads
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Lead'
+components:
+  schemas:
+    Lead:
+      type: object
+      required:
+        - name
+        - email
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        email:
+          type: string
+          format: email
+        company:
+          type: string
+        budget:
+          type: number
+        createdAt:
+          type: string
+          format: date-time

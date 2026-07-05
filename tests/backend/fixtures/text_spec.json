@@ -1,0 +1,23 @@
+{
+  "entities": [
+    {
+      "name": "Lead",
+      "fields": [
+        { "name": "id", "type": "String", "required": true },
+        { "name": "name", "type": "String", "required": true },
+        { "name": "email", "type": "String", "required": true, "is_email": true },
+        { "name": "company", "type": "String", "required": false },
+        { "name": "budget", "type": "Float", "required": false }
+      ]
+    }
+  ],
+  "endpoints": [
+    {
+      "path": "/api/leads",
+      "method": "POST",
+      "operation_id": "createLead",
+      "request_model": "Lead",
+      "response_model": "Lead"
+    }
+  ]
+}

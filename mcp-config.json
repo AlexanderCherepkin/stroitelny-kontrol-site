@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "node",
+      "args": ["mcp_servers/mcp-filesystem/build/index.js"]
+    },
+    "github": {
+      "command": "node",
+      "args": ["mcp_servers/mcp-github/dist/index.js"]
+    },
+    "commander": {
+      "command": "node",
+      "args": ["mcp_servers/mcp-commander/build/index.js"]
+    },
+    "database": {
+      "command": "node",
+      "args": ["mcp_servers/mcp-database/build/index.js"]
+    },
+    "replace": {
+      "command": "node",
+      "args": ["mcp_servers/mcp-replace/build/index.js"]
+    },
+    "web": {
+      "command": "node",
+      "args": ["mcp_servers/mcp-web/build/index.js"]
+    },
+    "python-tools": {
+      "command": "python",
+      "args": ["-m", "mcp_servers.bootstrap", "--serve"]
+    }
+  }
+}

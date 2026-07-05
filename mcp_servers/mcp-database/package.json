@@ -1,0 +1,22 @@
+{
+  "name": "mcp-database",
+  "version": "1.0.0",
+  "description": "MCP server for database queries with SQLite support",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "keywords": ["mcp", "database", "sqlite"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "root": {
+    "tag": "section",
+    "classes": [
+      "w-[1440px]",
+      "h-[1600px]",
+      "flex",
+      "flex-col",
+      "gap-0",
+      "justify-start",
+      "items-start",
+      "bg-[#fafafc]"
+    ],
+    "children": [
+      {
+        "tag": "div",
+        "classes": [
+          "w-[1440px]",
+          "h-[500px]",
+          "flex",
+          "flex-col",
+          "gap-[24px]",
+          "justify-start",
+          "items-center",
+          "py-[80px]",
+          "px-[160px]",
+          "bg-white"
+        ],
+        "children": [
+          {
+            "tag": "h1",
+            "classes": [
+              "w-[1120px]",
+              "h-[72px]",
+              "text-[56px]",
+              "font-[700]",
+              "font-[Inter]",
+              "text-center",
+              "text-[#1a1a1f]"
+            ],
+            "text": "Hero with overlay badge",
+            "figma_id": "100:2",
+            "figma_name": "Headline"
+          },
+          {
+            "tag": "article",
+            "classes": [
+              "w-[1120px]",
+              "h-[244px]",
+              "flex",
+              "flex-row",
+              "gap-[24px]",
+              "justify-center",
+              "items-stretch"
+            ],
+            "children": [
+              {
+                "tag": "article",
+                "classes": [
+                  "w-[360px]",
+                  "h-[244px]",
+                  "flex",
+                  "flex-col",
+                  "gap-[12px]",
+                  "justify-start",
+                  "items-start",
+                  "p-[24px]",
+                  "bg-white",
+                  "rounded-2xl",
+                  "relative"
+                ],
+                "inline_styles": {
+                  "box-shadow": "0px 8px 32px #0000001a"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[64px]",
+                      "h-[28px]",
+                      "flex",
+                      "flex-row",
+                      "gap-0",
+                      "justify-center",
+                      "items-center",
+                      "py-[6px]",
+                      "px-[12px]",
+                      "absolute",
+                      "bg-[#f04242]",
+                      "rounded-full"
+                    ],
+                    "inline_styles": {
+                      "left": "312px",
+                      "top": "-16px"
+                    },
+                    "children": [
+                      {
+                        "tag": "p",
+                        "classes": [
+                          "w-[40px]",
+                          "h-[16px]",
+                          "text-[12px]",
+                          "font-[600]",
+                          "font-[Inter]",
+                          "text-white"
+                        ],
+                        "text": "New",
+                        "figma_id": "100:6",
+                        "figma_name": "Badge_Text"
+                      }
+                    ],
+                    "figma_id": "100:5",
+                    "figma_name": "Badge",
+                    "figma_type": "FRAME"
+                  },
+                  {
+                    "tag": "h3",
+                    "classes": [
+                      "w-[312px]",
+                      "h-[28px]",
+                      "text-[22px]",
+                      "font-[600]",
+                      "font-[Inter]",
+                      "text-[#1a1a1f]"
+                    ],
+                    "text": "Card with absolute badge",
+                    "figma_id": "100:7",
+                    "figma_name": "Card_Title"
+                  },
+                  {
+                    "tag": "p",
+                    "classes": [
+                      "w-[312px]",
+                      "h-[96px]",
+                      "text-[16px]",
+                      "font-[400]",
+                      "font-[Inter]",
+                      "leading-[1.5]",
+                      "text-[#66666e]"
+                    ],
+                    "text": "This card has a badge positioned absolutely in the top-right corner.",
+                    "figma_id": "100:8",
+                    "figma_name": "Card_Body"
+                  }
+                ],
+                "figma_id": "100:4",
+                "figma_name": "Card",
+                "figma_type": "FRAME"
+              },
+              {
+                "tag": "article",
+                "classes": [
+                  "w-[360px]",
+                  "h-[244px]",
+                  "flex",
+                  "flex-col",
+                  "gap-0",
+                  "justify-start",
+                  "items-start",
+                  "bg-white",
+                  "rounded-2xl"
+                ],
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[360px]",
+                      "h-[160px]"
+                    ],
+                    "inline_styles": {
+                      "background-image": "url('test-image-ref-1')",
+                      "background-size": "cover"
+                    },
+                    "figma_id": "100:10",
+                    "figma_name": "Masked_Image"
+                  },
+                  {
+                    "tag": "p",
+                    "classes": [
+                      "w-[312px]",
+                      "h-[52px]",
+                      "text-[18px]",
+                      "font-[500]",
+                      "font-[Inter]",
+                      "text-[#1a1a1f]"
+                    ],
+                    "text": "Clipped image card",
+                    "figma_id": "100:11",
+                    "figma_name": "Mask_Label"
+                  }
+                ],
+                "figma_id": "100:9",
+                "figma_name": "Mask_Card",
+                "figma_type": "FRAME"
+              },
+              {
+                "tag": "article",
+                "classes": [
+                  "flex",
+                  "flex-col",
+                  "gap-[12px]",
+                  "justify-start",
+                  "items-start",
+                  "p-[24px]",
+                  "bg-white",
+                  "rounded-2xl"
+                ],
+                "children": [
+                  {
+                    "tag": "h2",
+                    "classes": [
+                      "w-[304px]",
+                      "h-[28px]",
+                      "text-[22px]",
+                      "font-[600]",
+                      "font-[Inter]",
+                      "text-[#1a1a1f]"
+                    ],
+                    "text": "Auto-sized card",
+                    "figma_id": "100:13",
+                    "figma_name": "Auto_Title"
+                  },
+                  {
+                    "tag": "p",
+                    "classes": [
+                      "w-[304px]",
+                      "h-[96px]",
+                      "text-[16px]",
+                      "font-[400]",
+                      "font-[Inter]",
+                      "leading-[1.5]",
+                      "text-[#66666e]"
+                    ],
+                    "text": "This card uses AUTO sizing on both axes. It should not receive fixed w/h classes.",
+                    "figma_id": "100:14",
+                    "figma_name": "Auto_Body"
+                  }
+                ],
+                "figma_id": "100:12",
+                "figma_name": "Auto_Card",
+                "figma_type": "FRAME"
+              }
+            ],
+            "figma_id": "100:3",
+            "figma_name": "Card_Stack",
+            "figma_type": "FRAME"
+          }
+        ],
+        "figma_id": "100:1",
+        "figma_name": "Hero_With_Badge",
+        "figma_type": "FRAME"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-[1440px]",
+          "h-[600px]",
+          "flex",
+          "flex-col",
+          "gap-0",
+          "justify-start",
+          "items-start",
+          "bg-[#f5f7fa]"
+        ],
+        "children": [
+          {
+            "tag": "div",
+            "classes": [
+              "w-[1440px]",
+              "h-[80px]",
+              "flex",
+              "flex-row",
+              "gap-[16px]",
+              "justify-between",
+              "items-center",
+              "py-[24px]",
+              "px-[160px]",
+              "bg-white"
+            ],
+            "children": [
+              {
+                "tag": "p",
+                "classes": [
+                  "w-[180px]",
+                  "h-[24px]",
+                  "text-[18px]",
+                  "font-[600]",
+                  "font-[Inter]",
+                  "text-[#1a1a1f]"
+                ],
+                "text": "Space-between row",
+                "figma_id": "200:3",
+                "figma_name": "Label"
+              },
+              {
+                "tag": "div",
+                "classes": [
+                  "w-[128px]",
+                  "h-[40px]",
+                  "flex",
+                  "flex-row",
+                  "gap-[12px]",
+                  "justify-start",
+                  "items-center"
+                ],
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[56px]",
+                      "h-[40px]",
+                      "flex",
+                      "flex-row",
+                      "gap-0",
+                      "justify-center",
+                      "items-center",
+                      "py-[8px]",
+                      "px-[16px]",
+                      "bg-[#e6ebf2]",
+                      "rounded-md"
+                    ],
+                    "children": [
+                      {
+                        "tag": "p",
+                        "classes": [
+                          "w-[40px]",
+                          "h-[20px]",
+                          "text-[14px]",
+                          "font-[500]",
+                          "font-[Inter]",
+                          "text-[#334c66]"
+                        ],
+                        "text": "Edit",
+                        "figma_id": "200:6",
+                        "figma_name": "Action_1_Text"
+                      }
+                    ],
+                    "figma_id": "200:5",
+                    "figma_name": "Action_1",
+                    "figma_type": "FRAME"
+                  },
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[60px]",
+                      "h-[40px]",
+                      "flex",
+                      "flex-row",
+                      "gap-0",
+                      "justify-center",
+                      "items-center",
+                      "py-[8px]",
+                      "px-[16px]",
+                      "bg-[#334c66]",
+                      "rounded-md"
+                    ],
+                    "children": [
+                      {
+                        "tag": "p",
+                        "classes": [
+                          "w-[44px]",
+                          "h-[20px]",
+                          "text-[14px]",
+                          "font-[500]",
+                          "font-[Inter]",
+                          "text-white"
+                        ],
+                        "text": "Save",
+                        "figma_id": "200:8",
+                        "figma_name": "Action_2_Text"
+                      }
+                    ],
+                    "figma_id": "200:7",
+                    "figma_name": "Action_2",
+                    "figma_type": "FRAME"
+                  }
+                ],
+                "figma_id": "200:4",
+                "figma_name": "Actions",
+                "figma_type": "FRAME"
+              }
+            ],
+            "figma_id": "200:2",
+            "figma_name": "Row_1",
+            "figma_type": "FRAME"
+          },
+          {
+            "tag": "div",
+            "classes": [
+              "w-[1440px]",
+              "h-[520px]",
+              "flex",
+              "flex-col",
+              "gap-[16px]",
+              "justify-start",
+              "items-start",
+              "py-[32px]",
+              "px-[160px]"
+            ],
+            "children": [
+              {
+                "tag": "div",
+                "classes": [
+                  "w-[1120px]",
+                  "h-[56px]",
+                  "flex",
+                  "flex-row",
+                  "gap-[16px]",
+                  "justify-start",
+                  "items-center"
+                ],
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[56px]",
+                      "h-[56px]",
+                      "flex",
+                      "flex-row",
+                      "gap-0",
+                      "justify-center",
+                      "items-center",
+                      "bg-[#3b82f5]",
+                      "rounded-xl"
+                    ],
+                    "figma_id": "200:11",
+                    "figma_name": "Icon_Box",
+                    "figma_type": "FRAME"
+                  },
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[400px]",
+                      "h-[48px]",
+                      "flex",
+                      "flex-col",
+                      "gap-[4px]",
+                      "justify-start",
+                      "items-start"
+                    ],
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "classes": [
+                          "w-[400px]",
+                          "h-[24px]",
+                          "text-[16px]",
+                          "font-[600]",
+                          "font-[Inter]",
+                          "text-[#1a1a1f]"
+                        ],
+                        "text": "Nested vertical stack",
+                        "figma_id": "200:13",
+                        "figma_name": "Row_Title"
+                      },
+                      {
+                        "tag": "p",
+                        "classes": [
+                          "w-[400px]",
+                          "h-[20px]",
+                          "text-[14px]",
+                          "font-[400]",
+                          "font-[Inter]",
+                          "text-[#66666e]"
+                        ],
+                        "text": "Two text nodes stacked inside a horizontal row.",
+                        "figma_id": "200:14",
+                        "figma_name": "Row_Subtitle"
+                      }
+                    ],
+                    "figma_id": "200:12",
+                    "figma_name": "Text_Stack",
+                    "figma_type": "FRAME"
+                  }
+                ],
+                "figma_id": "200:10",
+                "figma_name": "Row_A",
+                "figma_type": "FRAME"
+              },
+              {
+                "tag": "div",
+                "classes": [
+                  "w-[1120px]",
+                  "h-[56px]",
+                  "flex",
+                  "flex-row",
+                  "gap-[16px]",
+                  "justify-start",
+                  "items-center"
+                ],
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[56px]",
+                      "h-[56px]",
+                      "flex",
+                      "flex-row",
+                      "gap-0",
+                      "justify-center",
+                      "items-center",
+                      "bg-[#38a687]",
+                      "rounded-xl"
+                    ],
+                    "figma_id": "200:16",
+                    "figma_name": "Icon_Box",
+                    "figma_type": "FRAME"
+                  },
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[400px]",
+                      "h-[48px]",
+                      "flex",
+                      "flex-col",
+                      "gap-[4px]",
+                      "justify-start",
+                      "items-start"
+                    ],
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "classes": [
+                          "w-[400px]",
+                          "h-[24px]",
+                          "text-[16px]",
+                          "font-[600]",
+                          "font-[Inter]",
+                          "text-[#1a1a1f]"
+                        ],
+                        "text": "Another nested row",
+                        "figma_id": "200:18",
+                        "figma_name": "Row_Title"
+                      },
+                      {
+                        "tag": "p",
+                        "classes": [
+                          "w-[400px]",
+                          "h-[20px]",
+                          "text-[14px]",
+                          "font-[400]",
+                          "font-[Inter]",
+                          "text-[#66666e]"
+                        ],
+                        "text": "Icon box plus text stack, repeated with different colors.",
+                        "figma_id": "200:19",
+                        "figma_name": "Row_Subtitle"
+                      }
+                    ],
+                    "figma_id": "200:17",
+                    "figma_name": "Text_Stack",
+                    "figma_type": "FRAME"
+                  }
+                ],
+                "figma_id": "200:15",
+                "figma_name": "Row_B",
+                "figma_type": "FRAME"
+              }
+            ],
+            "figma_id": "200:9",
+            "figma_name": "Nested_Auto_Layout",
+            "figma_type": "FRAME"
+          }
+        ],
+        "figma_id": "200:1",
+        "figma_name": "Complex_Grid",
+        "figma_type": "FRAME"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-[1440px]",
+          "h-[500px]",
+          "flex",
+          "flex-col",
+          "gap-0",
+          "justify-center",
+          "items-center",
+          "bg-[#1a1a1f99]"
+        ],
+        "inline_styles": {
+          "opacity": "0.6"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "classes": [
+              "w-[400px]",
+              "h-[340px]",
+              "flex",
+              "flex-col",
+              "gap-[16px]",
+              "justify-start",
+              "items-center",
+              "p-[32px]",
+              "bg-white",
+              "rounded-[20px]"
+            ],
+            "children": [
+              {
+                "tag": "h2",
+                "classes": [
+                  "w-[336px]",
+                  "h-[32px]",
+                  "text-[24px]",
+                  "font-[700]",
+                  "font-[Inter]",
+                  "text-[#1a1a1f]"
+                ],
+                "text": "Confirm action",
+                "figma_id": "300:3",
+                "figma_name": "Modal_Title"
+              },
+              {
+                "tag": "p",
+                "classes": [
+                  "w-[336px]",
+                  "h-[72px]",
+                  "text-[16px]",
+                  "font-[400]",
+                  "font-[Inter]",
+                  "leading-[1.5]",
+                  "text-[#66666e]"
+                ],
+                "text": "This modal simulates an overlay with semi-transparent backdrop.",
+                "figma_id": "300:4",
+                "figma_name": "Modal_Body"
+              },
+              {
+                "tag": "div",
+                "classes": [
+                  "w-[336px]",
+                  "h-[40px]",
+                  "flex",
+                  "flex-row",
+                  "gap-[12px]",
+                  "justify-start",
+                  "items-center"
+                ],
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[100px]",
+                      "h-[40px]",
+                      "flex",
+                      "flex-row",
+                      "gap-0",
+                      "justify-center",
+                      "items-center",
+                      "py-[10px]",
+                      "px-[20px]",
+                      "bg-[#f2f5f7]",
+                      "rounded-lg"
+                    ],
+                    "children": [
+                      {
+                        "tag": "p",
+                        "classes": [
+                          "w-[72px]",
+                          "h-[20px]",
+                          "text-[14px]",
+                          "font-[500]",
+                          "font-[Inter]",
+                          "text-[#334c66]"
+                        ],
+                        "text": "Cancel",
+                        "figma_id": "300:7",
+                        "figma_name": "Cancel_Text"
+                      }
+                    ],
+                    "figma_id": "300:6",
+                    "figma_name": "Cancel_Button",
+                    "figma_type": "FRAME"
+                  },
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "w-[100px]",
+                      "h-[40px]",
+                      "flex",
+                      "flex-row",
+                      "gap-0",
+                      "justify-center",
+                      "items-center",
+                      "py-[10px]",
+                      "px-[20px]",
+                      "bg-[#3b82f5]",
+                      "rounded-lg"
+                    ],
+                    "children": [
+                      {
+                        "tag": "p",
+                        "classes": [
+                          "w-[68px]",
+                          "h-[20px]",
+                          "text-[14px]",
+                          "font-[500]",
+                          "font-[Inter]",
+                          "text-white"
+                        ],
+                        "text": "Confirm",
+                        "figma_id": "300:9",
+                        "figma_name": "Confirm_Text"
+                      }
+                    ],
+                    "figma_id": "300:8",
+                    "figma_name": "Confirm_Button",
+                    "figma_type": "FRAME"
+                  }
+                ],
+                "figma_id": "300:5",
+                "figma_name": "Modal_Actions",
+                "figma_type": "FRAME"
+              }
+            ],
+            "figma_id": "300:2",
+            "figma_name": "Modal",
+            "figma_type": "FRAME"
+          }
+        ],
+        "figma_id": "300:1",
+        "figma_name": "Modal_Overlay",
+        "figma_type": "FRAME"
+      }
+    ],
+    "figma_id": "1:1",
+    "figma_name": "Complex_Layout_Page",
+    "figma_type": "FRAME"
+  },
+  "node_count": 43,
+  "text_node_count": 18,
+  "asset_count": 0
+}
