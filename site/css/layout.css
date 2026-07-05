@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -9,6 +9,10 @@
   min-height: var(--header-height);
   display: flex;
   align-items: center;
+}
+
+.header--scrolled {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
 .header__inner {
@@ -155,7 +159,6 @@
   min-height: 720px;
   display: flex;
   align-items: center;
-  margin-top: var(--header-height);
   color: var(--color-white);
   overflow: hidden;
 }

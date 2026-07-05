@@ -136,7 +136,6 @@
 
   .hero {
     min-height: auto;
-    margin-top: var(--header-height);
   }
 
   .hero__inner {
