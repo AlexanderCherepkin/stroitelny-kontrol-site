@@ -152,9 +152,49 @@
   }
 
   .cards,
-  .features,
-  .gallery {
+  .features {
     grid-template-columns: 1fr;
+  }
+
+  .gallery__item {
+    flex: 0 0 260px;
+  }
+
+  .lightbox {
+    padding: 16px;
+  }
+
+  .lightbox__img {
+    max-height: 70vh;
+  }
+
+  .lightbox__nav {
+    width: 48px;
+    height: 48px;
+  }
+
+  .lightbox__nav svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .lightbox__nav--prev {
+    left: 8px;
+  }
+
+  .lightbox__nav--next {
+    right: 8px;
+  }
+
+  .lightbox__close {
+    top: 8px;
+    right: 12px;
+    font-size: 40px;
+  }
+
+  .lightbox__caption {
+    bottom: 8px;
+    font-size: 14px;
   }
 
   .footer__top {
